@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Quiz</title>
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div id="container">
+    <header>
+      <h1>JavaScript Quiz</h1>
+      <p>Test your knowledge!</p>
+    </header>
+    <section>
+      <div id="results"></div>
+      <form name="quizForm" onsubmit="return submitAnswers()">
+        <h3>1. In which HTML element do you put in JavaScript code?</h3>
+        <input type="radio" name="q1" value="a" id="q1a"> &lt;js&gt;<br>
+        <input type="radio" name="q2" value="b" id="q2a"> &lt;script&gt;<br>
+        <input type="radio" name="q3" value="c" id="q3a"> &lt;body&gt;<br>
+        <input type="radio" name="q4" value="d" id="q4a"> &lt;link&gt;<br>
+      </form>
+    </section>
 
+  </div>
+
+<script scr="js/script.js"></script>
 </body>
 </html>
