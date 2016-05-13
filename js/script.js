@@ -1,4 +1,4 @@
-function submitAnswers () {
+function submitAnswers() {
   var total = 5;
   var score = 0;
 
@@ -20,6 +20,7 @@ function submitAnswers () {
   }
 
 // Set Correct Answers
+
   var answers = ["b", "a", "d", "b", "d"];
 
 // Check Answers
@@ -28,7 +29,15 @@ function submitAnswers () {
 
     if(eval('q'+i) == answers[i-1]){
       score++;
+    }
   }
 
-alert("You scored " +score+ " out of " +total+ ".");
+// Display Results
+
+var results = document.getElementById(results)
+
+  var results = document.getElementById('results');
+  results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
+
+return false;
 }
