@@ -23,26 +23,12 @@ function submitAnswers () {
   var answers = ["b", "a", "d", "b", "d"];
 
 // Check Answers
-  if(q1 == answers[0]){
-    score++;
-  }
 
-  if(q2 == answers[1]){
-    score++;
-  }
+  for(i = 1; i <= total; i++) {
 
-  if(q3 == answers[2]){
-    score++;
-  }
-
-  if(q4 == answers[3]){
-    score++;
-  }
-
-  if(q5 == answers[4]){
-    score++;
+    if(eval('q'+i) == answers[i-1]){
+      score++;
   }
 
 alert("You scored " +score+ " out of " +total+ ".");
-
 }
